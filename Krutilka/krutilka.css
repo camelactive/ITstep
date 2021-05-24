@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(to right ,white, black);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.clock-body{
+    margin: 10vh auto;
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    background: radial-gradient(farthest-side ellipse at top left, white, #aaaaaa);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3), -5px -10px 20px rgba(255,255,255,0.5);
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    border: 5px dashed red;
+}
+.arrows{
+    margin-left: 50%;
+    height: 1.5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    background: linear-gradient(to right, blue, black);
+
+    animation-name: clock;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: left;
+    top: 50%;
+}
+.arrows2{
+    margin-right:50%;
+    display: block;
+    position: relative;
+
+
+    animation-name: clock;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: normal;
+    transform-origin: right;
+
+
+
+    top: 50%;
+    background: linear-gradient(to right, rgb(66, 62, 62), rgb(204, 32, 9));
+    height: 1.5%;
+
+}
+
+
+@keyframes clock{
+    0%{
+        left: 0px; 
+
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+
+}
+.button{
+    padding-top: 10px;
+    box-shadow: black 5px 5px 5px;
+    border: 3px solid black;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background: linear-gradient(to right, red, orange);
+    border-radius: 100%;
+    margin-left:-400px;
+}
+.button2{
+    padding-top: 10px;
+    box-shadow: black 5px 5px 5px;
+    border: 3px solid black;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background: linear-gradient(to right, red, orange);
+    border-radius: 100%;
+    margin-left:-400px;
+}
